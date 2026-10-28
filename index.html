@@ -23,6 +23,12 @@
     }
     h1 { color: #e47911; }
     .status { color: #15803d; font-weight: bold; }
+    .server {
+      margin-top: 24px;
+      padding: 14px;
+      background: #e2e8f0;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
@@ -33,7 +39,10 @@
     <p>Web Tier: Application Load Balancer</p>
     <p>Application Tier: EC2 Auto Scaling</p>
     <p>Database Tier: Private Database</p>
-    <p id="server">Server: To be configured</p>
+    <div class="server">
+      <strong>Application Server:</strong>
+      <span id="server">Local Development</span>
+    </div>
   </div>
 </body>
 </html>
